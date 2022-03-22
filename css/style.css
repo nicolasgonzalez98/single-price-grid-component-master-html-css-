@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Outfit:wght@300;400;600&family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&family=Spartan:wght@400;500;700&display=swap');
+
+:root{
+    /*Primary*/
+
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+
+    /*Neutral*/
+
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+}
+
+main{
+    background-color: var(--Grayish-Blue);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Carta*/
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 60%;
+    border-radius: 16px;
+}
+
+/*Top*/
+
+.top{
+    height: 50%;
+    width: 100%;
+    background-color: var(--Light-Gray);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top article{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.top h1{
+    color: var(--Cyan);
+    font-weight: 700;
+}
+
+.top h3{
+    color: var(--Bright-Yellow);
+    font-weight: 400;
+}
+
+.top p{
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+
+/*Bottom*/
+.bottom{
+    height: 50%;
+    width: 100%;
+    background-color: var(--Cyan);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.right, .left{
+    width: 50%;
+    height: 100%;
+}
+
+.left{
+    background-color: var(--Cyan);
+    border-bottom-left-radius: 1rem;
+    color: var(--Light-Gray);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.left article{
+    width: 80%;
+    height: 70%;
+    margin-top: 1.5rem;
+}
+
+.left h4{
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.primero, .segundo{
+    font-weight: 400;
+    
+}
+
+.primero{
+    font-size: .8rem;
+    padding-bottom: .5rem;
+}
+
+span{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.segundo{
+    font-size: .9rem;
+    padding-bottom: 2rem;
+}
+
+button{
+    width: 80%;
+    height: 2.5rem;
+    border-radius: 8px;
+    background-color: var(--Bright-Yellow);
+    color: var(--Light-Gray);
+    border: none;
+    font-weight: 700;
+}
+
+/*Derecha*/
+
+.right{
+    background-color: rgb(91, 201, 199);
+    border-bottom-right-radius: 1rem;
+    color: var(--Light-Gray);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.right h1, .right ul{
+    
+    padding-left: 2rem;
+}
+
+.right h1{
+    font-weight: 700;
+    font-size: 1rem;
+    padding-bottom: -10rem;
+    padding-top: 1.5rem;
+}
+
+.right ul{
+    list-style: none;
+    padding-top: 1rem;
+}
+
+.right li{
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-bottom: .2rem;
+
+}
